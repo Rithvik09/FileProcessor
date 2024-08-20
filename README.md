@@ -34,6 +34,5 @@ updateDynamoDB: Stores metadata in DynamoDB.
 triggerVMCreation: Initiates a VM in EC2 to process the file and text input.
 
 
-TABLE_NAME: The name of the DynamoDB table.
-BUCKET_NAME: The name of the S3 bucket.
-Other variables specific to your AWS environment.
+TABLE_NAME: ProcessorTable
+BUCKET_NAME: processorbucket
