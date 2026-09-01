@@ -1,0 +1,21 @@
+{
+  "name": "file-processor-lambdas",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Source for the five Lambda functions in the File Processor pipeline. Bundled per-function by CDK's NodejsFunction (esbuild) at deploy time — this package.json exists for local typechecking and editor tooling.",
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.577.0",
+    "@aws-sdk/client-ec2": "^3.577.0",
+    "@aws-sdk/client-s3": "^3.577.0",
+    "@aws-sdk/lib-dynamodb": "^3.577.0"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.138",
+    "@types/node": "^20.14.2",
+    "esbuild": "^0.21.5",
+    "typescript": "^5.4.5"
+  }
+}
